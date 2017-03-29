@@ -139,10 +139,9 @@ var playPong = function(IDarray) {
   addDivs();
   IDarray.forEach(function(item, index) {
     document.getElementById(item).setAttribute('id', 'gameDiv');
+    document.getElementById(item).innerHTML = "<script src='{% static "cube/js/pong.js"%}'></script>";
   });
-  var game = new Phaser.Game(gameProperties.screenWidth, gameProperties.screenHeight, Phaser.AUTO, 'gameDiv');
-  game.state.add('main', mainState);
-  game.state.start('main');
+
 
 };
 
