@@ -1,3 +1,5 @@
+var game;
+
 var gameProperties = {
   screenWidth: 32,
   screenHeight: 32,
@@ -256,7 +258,7 @@ mainState.prototype = {
 };
 
 createGame = function(gameDiv) {
-  var game = new Phaser.Game(gameProperties.screenWidth, gameProperties.screenHeight, Phaser.AUTO, 'gameDiv');
+  game = new Phaser.Game(gameProperties.screenWidth, gameProperties.screenHeight, Phaser.AUTO, 'gameDiv');
   game.state.add('main', mainState);
   game.state.start('main');
 }

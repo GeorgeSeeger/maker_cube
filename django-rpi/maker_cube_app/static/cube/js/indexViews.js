@@ -138,7 +138,7 @@ var water = function(IDarray) {
 var playPong = function(IDarray) {
   addDivs();
   IDarray.forEach(function(item, index) {
-    pong.createGame(item);
+    createGame(item);
   });
 
 
