@@ -137,9 +137,10 @@ var water = function(IDarray) {
 
 var playPong = function(IDarray) {
   addDivs();
+  var pongScript = "<script src='{% static "cube/js/pong.js"%}'></script>"
   IDarray.forEach(function(item, index) {
     document.getElementById(item).setAttribute('id', 'gameDiv');
-    document.getElementById(item).innerHTML = "<script src='{% static "cube/js/pong.js"%}'></script>";
+    document.body.appendChild(pongScript);
   });
 
 
