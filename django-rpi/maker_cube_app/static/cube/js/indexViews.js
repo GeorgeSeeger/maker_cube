@@ -138,7 +138,7 @@ var water = function(IDarray) {
 var playPong = function(IDarray) {
   addDivs();
   IDarray.forEach(function(item, index) {
-    document.getElementById(item).setAttribute('id', gameDiv);
+    document.getElementById(item).setAttribute('id', 'gameDiv');
   });
 };
 
