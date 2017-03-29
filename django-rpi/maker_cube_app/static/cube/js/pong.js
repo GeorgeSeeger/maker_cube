@@ -21,10 +21,10 @@ var gameProperties = {
 };
 
 var graphicsAssets = {
-  ballURL: 'assets/ball.png',
+  ballURL: '/static/cube/img/pong/ball.png',
   ballName: 'ball',
 
-  paddleURL: 'assets/paddle.png',
+  paddleURL: '/static/cube/img/pong/paddle.png',
   paddleName: 'paddle',
 };
 
