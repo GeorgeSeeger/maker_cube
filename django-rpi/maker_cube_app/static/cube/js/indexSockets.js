@@ -32,6 +32,8 @@ socket.onmessage = function(e) {
     showWeather(message.slice(1));
   } else if (message[0] === '\\roi') {
     showRoi(message.slice(1));
+  } else if (message[0] === '\\pong') {
+    playPong(message.slice(1));
   } else {
     disableReactButton();
     scrollingText(e.data);
