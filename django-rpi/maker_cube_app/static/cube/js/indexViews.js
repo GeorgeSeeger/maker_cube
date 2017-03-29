@@ -140,6 +140,10 @@ var playPong = function(IDarray) {
   IDarray.forEach(function(item, index) {
     document.getElementById(item).setAttribute('id', 'gameDiv');
   });
+  var game = new Phaser.Game(gameProperties.screenWidth, gameProperties.screenHeight, Phaser.AUTO, 'gameDiv');
+  game.state.add('main', mainState);
+  game.state.start('main');
+
 };
 
 var showWeather = function(IDarray) {

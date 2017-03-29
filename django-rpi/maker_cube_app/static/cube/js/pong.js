@@ -250,7 +250,3 @@ mainState.prototype = {
     this.tf_scoreRight.anchor.set(0.5,0);
   },
 };
-
-var game = new Phaser.Game(gameProperties.screenWidth, gameProperties.screenHeight, Phaser.AUTO, 'gameDiv');
-game.state.add('main', mainState);
-game.state.start('main');
